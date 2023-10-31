@@ -11,6 +11,7 @@ namespace Övning_queue
             //{
             //    Age = 20,
             //    Name = "Test",
+            // Hej
             //};
             Läkare Anton = new Läkare()
             {
