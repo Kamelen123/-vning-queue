@@ -60,10 +60,22 @@ namespace Övning_queue
             patient peekPatient = VacQueue.Peek();
             Console.WriteLine(peekPatient.Name);
 
-            Console.WriteLine("Personal: ");
-            Console.WriteLine( "Läkare: ");
-            Console.WriteLine("Namn :" + Anton.Name + " \nÅlder :" + Anton.Age + " \nLön: " + Anton.Salary + " \nArbetstid : " + Anton.WorkTime + " \nID: " + Anton.ID);
-            
+            Console.WriteLine("\nPersonal : ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\nLäkare");
+            Console.ResetColor();
+            Console.WriteLine("Namn : " + Anton.Name + "\nÅlder : " + Anton.Age + " \nLön: " + Anton.Salary + " \nArbetstid : " + Anton.WorkTime + " \nID: " + Anton.ID);
+            Console.ForegroundColor= ConsoleColor.Magenta;
+            Console.WriteLine("\nSjuksköterska");
+            Console.ResetColor();
+            Console.WriteLine("Namn : " + torbjörn.Name + " \nÅlder : " + torbjörn.Age + "\nLön : " + torbjörn.Salary + " \nArbetsid : " + torbjörn.WorkTime + "\nID : " + torbjörn.ID );
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\nInformation om patienter");
+            Console.ResetColor();
+            Console.WriteLine("Namn : " + Anas.Name + " \nSjukdom : " + Anas.sjukdom + " \nRegistrerad : " + Anas.TimeOfReg + " \nVaccinnummer : " +Anas.VacQue);
+            Console.WriteLine("\nNamn : " + Alf.Name  + " \nSjukdom : " + Alf.sjukdom + "  \nRegistrerad : " + Alf.TimeOfReg + " \nVaccinnummer : " + Alf.VacQue);
+            Console.ReadKey();
         }
     }
 }
