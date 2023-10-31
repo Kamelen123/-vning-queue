@@ -48,9 +48,7 @@ namespace Övning_queue
                 VacQue = 2,
             };
             torbjörn.BlodTest();
-            Anton.SkrivaRecept();
-
-            //Dictionary<int, patient> dict = new Dictionary<int, Employee>();
+            Anton.SkrivaRecept();            
 
             Queue<patient> VacQueue = new Queue<patient>();
             VacQueue.Enqueue(Anas);
@@ -62,6 +60,10 @@ namespace Övning_queue
             patient peekPatient = VacQueue.Peek();
             Console.WriteLine(peekPatient.Name);
 
+            Console.WriteLine("Personal: ");
+            Console.WriteLine( "Läkare: ");
+            Console.WriteLine("Namn :" + Anton.Name + " \nÅlder :" + Anton.Age + " \nLön: " + Anton.Salary + " \nArbetstid : " + Anton.WorkTime + " \nID: " + Anton.ID);
+            
         }
     }
 }
